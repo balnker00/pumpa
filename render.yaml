@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: pumpa-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: PORT
+        value: 4000
+      - key: FRONTEND_URL
+        # Replace with your GitHub Pages URL: https://<user>.github.io/pumpa
+        value: https://balnker00.github.io
