@@ -7,8 +7,8 @@ interface Props {
 function getColor(n: number) {
   if (n < 1.5) return '#ef4444';
   if (n < 2) return '#f97316';
-  if (n < 5) return '#a855f7';
-  if (n < 10) return '#eab308';
+  if (n < 5) return '#f0c420';
+  if (n < 10) return '#22c55e';
   return '#22c55e';
 }
 

@@ -16,7 +16,7 @@ export default function BetsList({ bets }: Props) {
       {bets.map((bet, i) => (
         <div key={i} className="flex items-center justify-between px-3 py-2 rounded-lg text-sm" style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)' }}>
           <div className="flex items-center gap-2 min-w-0">
-            <div className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'var(--accent-purple)' }}>
+            <div className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'var(--accent-yellow)' }}>
               {bet.username[0]?.toUpperCase()}
             </div>
             <div className="min-w-0">

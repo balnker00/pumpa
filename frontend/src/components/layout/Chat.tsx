@@ -37,12 +37,12 @@ export default function Chat({ messages, onSend, username }: Props) {
           <div key={msg.id} className="flex items-start gap-2 text-sm">
             <div
               className="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold text-white mt-0.5"
-              style={{ background: 'var(--accent-purple)' }}
+              style={{ background: 'var(--accent-yellow)' }}
             >
               {msg.username[0]?.toUpperCase()}
             </div>
             <div className="min-w-0">
-              <span className="font-medium text-xs" style={{ color: msg.username === username ? '#a855f7' : 'var(--text-secondary)' }}>
+              <span className="font-medium text-xs" style={{ color: msg.username === username ? '#f0c420' : 'var(--text-secondary)' }}>
                 {msg.username}
               </span>
               <p className="break-words" style={{ color: 'var(--text-primary)' }}>{msg.text}</p>
@@ -66,7 +66,7 @@ export default function Chat({ messages, onSend, username }: Props) {
           <button
             onClick={handleSend}
             className="px-3 py-2 rounded-lg transition-opacity hover:opacity-80"
-            style={{ background: 'var(--accent-purple)' }}
+            style={{ background: 'var(--accent-yellow)' }}
           >
             ➤
           </button>

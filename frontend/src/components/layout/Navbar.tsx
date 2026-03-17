@@ -59,7 +59,7 @@ export default function Navbar({ playerCount, balance }: Props) {
       {/* Connect wallet placeholder */}
       <button
         className="px-4 py-2 rounded-lg text-sm font-bold transition-opacity hover:opacity-80"
-        style={{ background: 'linear-gradient(135deg, #7c3aed, #a855f7)', color: 'white' }}
+        style={{ background: 'linear-gradient(135deg, #b8960c, #f0c420)', color: '#0a0a00' }}
       >
         Connect Wallet
       </button>

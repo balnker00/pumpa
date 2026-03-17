@@ -38,7 +38,7 @@ export default function BetPanel({ gameState, balance, activeBet, onPlaceBet, on
         </label>
         <div className="flex gap-2">
           <div className="flex-1 flex items-center gap-2 px-3 py-2 rounded-lg" style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)' }}>
-            <span className="text-purple-400 font-bold text-sm">◎</span>
+            <span className="text-yellow-400 font-bold text-sm">◎</span>
             <input
               type="number"
               min="0"
@@ -88,7 +88,7 @@ export default function BetPanel({ gameState, balance, activeBet, onPlaceBet, on
           onClick={handleBet}
           disabled={!canBet}
           className="w-full py-3 rounded-xl font-bold text-white text-lg transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed"
-          style={{ background: canBet ? 'linear-gradient(135deg, #7c3aed, #a855f7)' : undefined }}
+          style={{ background: canBet ? 'linear-gradient(135deg, #b8960c, #f0c420)' : undefined, color: canBet ? '#0a0a00' : undefined }}
         >
           {activeBet !== null ? `Bet Placed: ◎${activeBet}` : 'Place Bet'}
         </button>
@@ -96,7 +96,7 @@ export default function BetPanel({ gameState, balance, activeBet, onPlaceBet, on
 
       {/* Balance */}
       <div className="text-center text-sm" style={{ color: 'var(--text-muted)' }}>
-        Balance: <span className="font-bold text-purple-400">◎{balance.toFixed(4)}</span>
+        Balance: <span className="font-bold text-yellow-400">◎{balance.toFixed(4)}</span>
         <span className="text-xs ml-1">(placeholder)</span>
       </div>
     </div>

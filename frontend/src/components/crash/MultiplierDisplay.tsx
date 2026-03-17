@@ -11,8 +11,8 @@ interface Props {
 
 function getColor(gameState: GameState, multiplier: number) {
   if (gameState === 'crashed') return '#ef4444';
-  if (multiplier >= 5) return '#eab308';
-  if (multiplier >= 2) return '#a855f7';
+  if (multiplier >= 5) return '#f0c420';
+  if (multiplier >= 2) return '#f0c420';
   return '#22c55e';
 }
 
@@ -26,7 +26,7 @@ export default function MultiplierDisplay({ multiplier, gameState, countdown }: 
         className="absolute inset-0 opacity-20"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(124,58,237,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(124,58,237,0.3) 1px, transparent 1px)',
+            'linear-gradient(rgba(240,196,32,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(240,196,32,0.2) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
           perspective: '500px',
         }}
